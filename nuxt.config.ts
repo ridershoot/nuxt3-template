@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // ts
   typescript: {
-    shim: false
+    shim: false,
   },
-  modules: ["@pinia/nuxt", "@nuxt/ui"]
+  modules: ["@pinia/nuxt", "@nuxt/ui", "@nuxt/eslint"],
 });

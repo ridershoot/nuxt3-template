@@ -24,7 +24,7 @@ const isDark = computed<boolean>({
   },
   set() {
     colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
-  }
+  },
 });
 </script>
 
