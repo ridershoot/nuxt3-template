@@ -5,5 +5,5 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-  modules: ["@pinia/nuxt", "@nuxt/ui", "@nuxt/eslint"],
+  modules: ["@pinia/nuxt"],
 });
