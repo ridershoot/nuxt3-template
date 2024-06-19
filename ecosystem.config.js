@@ -7,6 +7,9 @@ module.exports = {
       // 实例数量
       instances: "max",
       script: "./.output/server/index.mjs",
+      env: {
+        NUXT_API_SECRET: "123",
+      },
     },
   ],
 };

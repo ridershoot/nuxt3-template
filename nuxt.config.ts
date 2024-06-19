@@ -7,8 +7,9 @@ export default defineNuxtConfig({
   },
   modules: ["@pinia/nuxt"],
   runtimeConfig: {
+    apiSecret: "",
     public: {
-      apiBaseUrl: process.env.NUXT_API_BASE_URL,
+      apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL,
     },
   },
 });
