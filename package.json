@@ -1,13 +1,17 @@
 {
   "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "nuxt build --dotenv .env.prod",
+    "build:stage": "nuxt build --dotenv .env.stage",
+    "dev": "nuxt dev --dotenv .env.dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop all",
+    "pm2:kill": "pm2 kill",
+    "pm2:list": "pm2 list"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
